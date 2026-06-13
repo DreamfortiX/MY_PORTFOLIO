@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Naseeb Sultan — Android & DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Particle canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>NS<span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle">&#9776;</button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <img src="images/profile.jpeg" alt="Naseeb Sultan" class="hero-photo" />
+        <div class="photo-ring"></div>
+        <div class="photo-ring ring2"></div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">
+          <span class="name-animate">Naseeb</span>
+          <span class="name-animate delay1"> Sultan</span>
+        </h1>
+        <div class="typewriter-wrap">
+          <span class="typewriter-prefix">I build </span>
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-bio">
+          IT graduate · Android Developer · DevOps Engineer · ML Enthusiast<br/>
+          Based in Lahore, Pakistan 🇵🇰
+        </p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Hire Me</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/DreamfortiX" target="_blank" class="social-pill">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+            GitHub
+          </a>
+          <a href="mailto:naseeb.sultan9295.it@gmail.com" class="social-pill">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Email
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title" data-label="01">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Information Technology graduate with hands-on experience in <strong>Android Application Development</strong> using Kotlin and Java, and growing expertise in <strong>DevOps engineering</strong> — CI/CD pipelines, cloud infrastructure, and containerization.
+          </p>
+          <p>
+            I'm passionate about building efficient, user-focused applications and automating the infrastructure that powers them. Whether it's a real-time safety app or a cloud deployment pipeline, I bring full-stack thinking to every problem.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-num">3+</span>
+              <span class="stat-label">Years Dev XP</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">3.28</span>
+              <span class="stat-label">CGPA</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Companies</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal">
+          <div class="info-card">
+            <h3>Education</h3>
+            <div class="edu-item">
+              <span class="edu-degree">BSIT</span>
+              <span class="edu-uni">University of Sargodha</span>
+              <span class="edu-year">2021 – 2025 · GPA 3.28</span>
+            </div>
+            <h3 style="margin-top:1.5rem">Certifications</h3>
+            <div class="cert-item">
+              <span class="cert-badge">✓</span>
+              Android Development — HiskyTech (2024)
+            </div>
+            <div class="cert-item">
+              <span class="cert-badge">✓</span>
+              Basics of Database — HiskyTech (2024)
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section section-dark" id="skills">
+    <div class="container">
+      <h2 class="section-title" data-label="02">Skills</h2>
+      <div class="skills-domains">
+
+        <div class="domain-card reveal">
+          <div class="domain-icon">📱</div>
+          <h3>Android Development</h3>
+          <div class="skill-tags">
+            <span class="tag">Kotlin</span><span class="tag">Java</span><span class="tag">Android Studio</span>
+            <span class="tag">MVVM</span><span class="tag">Room DB</span><span class="tag">Firebase</span>
+            <span class="tag">Firestore</span><span class="tag">FirebaseAuth</span><span class="tag">Firestorage</span>
+            <span class="tag">Realtime DB</span><span class="tag">API Integration</span>
+          </div>
+        </div>
+
+        <div class="domain-card reveal">
+          <div class="domain-icon">⚙️</div>
+          <h3>DevOps Engineering</h3>
+          <div class="skill-tags">
+            <span class="tag tag-devops">Docker</span><span class="tag tag-devops">Kubernetes</span>
+            <span class="tag tag-devops">Jenkins</span><span class="tag tag-devops">GitHub Actions</span>
+            <span class="tag tag-devops">CI/CD Pipelines</span><span class="tag tag-devops">Terraform</span>
+            <span class="tag tag-devops">Ansible</span><span class="tag tag-devops">Linux (Ubuntu)</span>
+            <span class="tag tag-devops">Bash Scripting</span><span class="tag tag-devops">Nginx</span>
+            <span class="tag tag-devops">Monitoring (Prometheus)</span>
+          </div>
+        </div>
+
+        <div class="domain-card reveal">
+          <div class="domain-icon">☁️</div>
+          <h3>Cloud & Infrastructure</h3>
+          <div class="skill-tags">
+            <span class="tag tag-cloud">AWS EC2</span><span class="tag tag-cloud">Amazon S3</span>
+            <span class="tag tag-cloud">Amazon VPC</span><span class="tag tag-cloud">Amazon Polly</span>
+            <span class="tag tag-cloud">Azure</span><span class="tag tag-cloud">Git / GitHub</span>
+            <span class="tag tag-cloud">Networking</span><span class="tag tag-cloud">LAN Setup</span>
+          </div>
+        </div>
+
+        <div class="domain-card reveal">
+          <div class="domain-icon">🤖</div>
+          <h3>AI / Machine Learning</h3>
+          <div class="skill-tags">
+            <span class="tag tag-ml">Python</span><span class="tag tag-ml">TensorFlow</span>
+            <span class="tag tag-ml">CNN</span><span class="tag tag-ml">YOLOv4</span>
+            <span class="tag tag-ml">Deep Learning</span><span class="tag tag-ml">OpenCV</span>
+            <span class="tag tag-ml">Labeled Datasets</span>
+          </div>
+        </div>
+
+        <div class="domain-card reveal">
+          <div class="domain-icon">🗄️</div>
+          <h3>Backend & Databases</h3>
+          <div class="skill-tags">
+            <span class="tag">Node.js</span><span class="tag">Express.js</span>
+            <span class="tag">MongoDB</span><span class="tag">MySQL</span>
+            <span class="tag">React.js</span><span class="tag">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="domain-card reveal">
+          <div class="domain-icon">🛠️</div>
+          <h3>IT Support</h3>
+          <div class="skill-tags">
+            <span class="tag">Windows OS</span><span class="tag">Hardware Troubleshooting</span>
+            <span class="tag">Network Config</span><span class="tag">Printer Maintenance</span>
+            <span class="tag">Ticket Handling</span><span class="tag">System Security</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <h2 class="section-title" data-label="03">Experience</h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3>Technical Support Engineer</h3>
+                <p class="tl-company">Sybrid Pvt Ltd, Lahore</p>
+              </div>
+              <span class="tl-date">Apr 2026 – Present</span>
+            </div>
+            <p>Providing 1st-level IT support, system maintenance, and troubleshooting for end-users. Responsible for software installation, network and printer configuration, ticket handling, and ensuring system security, performance, and compliance with organizational IT standards.</p>
+            <div class="tl-tags"><span>IT Support</span><span>Networking</span><span>Ticket System</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3>Android Developer Intern</h3>
+                <p class="tl-company">HiskyTech, Sargodha</p>
+              </div>
+              <span class="tl-date">Dec 2024 – Jul 2025</span>
+            </div>
+            <ul>
+              <li>Developed Android applications using Kotlin and Java (QR Scanner, Calculator, Urdu Bolo).</li>
+              <li>Worked with Android Studio, Firebase, APIs, and UI/UX components.</li>
+              <li>Collaborated with development team throughout the full app lifecycle.</li>
+            </ul>
+            <div class="tl-tags"><span>Kotlin</span><span>Firebase</span><span>Android Studio</span></div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tl-header">
+              <div>
+                <h3>IT Support</h3>
+                <p class="tl-company">Premier Group of Companies, DI Khan</p>
+              </div>
+              <span class="tl-date">Oct 2025 – Mar 2026</span>
+            </div>
+            <p>Provided IT support in a sugar mill. Installed and configured Windows OS, software, and peripheral devices. Assisted with cable punching, LAN setup, and basic network troubleshooting. Handled printer maintenance and repairs.</p>
+            <div class="tl-tags"><span>Windows</span><span>LAN</span><span>Hardware</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section section-dark" id="projects">
+    <div class="container">
+      <h2 class="section-title" data-label="04">Projects</h2>
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-num">01</div>
+          <div class="project-body">
+            <h3>Tongue Tech AI</h3>
+            <p>AI-Powered Tongue Cancer Detection System — Web & Android app using CNN and YOLOv4 for early screening via image analysis.</p>
+            <div class="project-stack">
+              <span>Kotlin</span><span>React.js</span><span>Node.js</span><span>Python</span><span>CNN</span><span>YOLOv4</span><span>OpenCV</span><span>MongoDB</span>
+            </div>
+          </div>
+          <a href="https://github.com/DreamfortiX/TongueTechAi" target="_blank" class="project-link">
+            View →
+          </a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-num">02</div>
+          <div class="project-body">
+            <h3>Real-Time Distress Detection</h3>
+            <p>Android + IoT safety app using Firebase Realtime DB to receive heartbeat data. ML model detects emergencies and sends SMS alerts with live GPS location.</p>
+            <div class="project-stack">
+              <span>Kotlin</span><span>Firebase</span><span>Machine Learning</span><span>IoT</span><span>Google Maps API</span>
+            </div>
+          </div>
+          <a href="https://github.com/DreamfortiX/SafetApp_with_iot" target="_blank" class="project-link">
+            View →
+          </a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-num">03</div>
+          <div class="project-body">
+            <h3>GirlsSafe — Women Safety App</h3>
+            <p>Android app with real-time audio threat detection using a trained ML model. Sends auto SOS alerts with location, SOS button, contact management, and fake calls.</p>
+            <div class="project-stack">
+              <span>Kotlin</span><span>Firebase</span><span>Machine Learning</span><span>Google Maps API</span><span>Cloud Storage</span>
+            </div>
+          </div>
+          <a href="https://github.com/DreamfortiX/GirlsSafe" target="_blank" class="project-link">
+            View →
+          </a>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-num">04</div>
+          <div class="project-body">
+            <h3>AWS Cloud Projects</h3>
+            <p>Deployed web apps on EC2, hosted static sites on S3, created VPCs for secure environments, and built text-to-speech features using Amazon Polly.</p>
+            <div class="project-stack">
+              <span>AWS EC2</span><span>Amazon S3</span><span>Amazon VPC</span><span>Amazon Polly</span>
+            </div>
+          </div>
+          <a href="https://github.com/DreamfortiX" target="_blank" class="project-link">
+            View →
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-label="05">Get In Touch</h2>
+      <div class="contact-wrap reveal">
+        <div class="contact-left">
+          <p class="contact-tagline">Let's build something great together.</p>
+          <p>Whether it's an Android app, a DevOps pipeline, or an AI solution — I'm open to new opportunities and collaborations.</p>
+          <div class="contact-info">
+            <a href="tel:+923247397105" class="contact-row">
+              <span class="contact-icon">📞</span>
+              <span>(+92) 3247397105</span>
+            </a>
+            <a href="mailto:naseeb.sultan9295.it@gmail.com" class="contact-row">
+              <span class="contact-icon">✉️</span>
+              <span>naseeb.sultan9295.it@gmail.com</span>
+            </a>
+            <a href="https://github.com/DreamfortiX" target="_blank" class="contact-row">
+              <span class="contact-icon">💻</span>
+              <span>github.com/DreamfortiX</span>
+            </a>
+            <div class="contact-row">
+              <span class="contact-icon">📍</span>
+              <span>Lahore, Punjab, Pakistan</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleForm(event)">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email" required />
+          </div>
+          <div class="form-group">
+            <textarea rows="5" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>
+        <span class="logo-bracket">&lt;</span>NS<span class="logo-bracket">/&gt;</span>
+        &nbsp;·&nbsp; Naseeb Sultan &nbsp;·&nbsp; Lahore, Pakistan
+      </p>
+      <p class="footer-sub">Built with HTML · CSS · JavaScript · ❤️</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
